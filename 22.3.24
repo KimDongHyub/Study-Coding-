@@ -1,0 +1,19 @@
+22/3/24 : 
+min, max 는 시간복잡도가 O(n) 이다. 따라서 루프 안 min,max 를 넣지 말고 루프를 돌기 전에 미리 빼두도록 하자. 
+del arr(i) : 인덱스로 제거 
+arr.remove(something) 내용으로 제거. 
+break : 반복문탈출. 
+
+원소삭제, 반복문은 모두 O(n) 의 시간복잡도를 갖는다
+       
+zfill(n) n개의 숫자가 되도록 0을 채워넣는다. 
+
+카카오 1번문제: 
+for i in range(n):
+        tmp = bin(arr1[i] | arr2[i]).     // | 은 OR로 자동으로 이진수로 변환해서 계산해준다.  
+        # tmp결과 ex) '0b1101'
+        tmp = tmp[2:].zfill(n)            //앞에 1b를 잘라주고 길이에 맞게 0을 채워준다. 
+        # tmp결과 ex) '01101'
+        tmp = tmp.replace('1','#').replace('0',' ').       //1을 # 0을 공백으로 바꿔준다
+        # tmp결과 ex) ' ## #'
+        answer.append(tmp)                 //결과에 넣는다. 
