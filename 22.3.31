@@ -1,0 +1,2 @@
+any 이터러블중에서 하나라도 참이면 참 반환
+if any(cur[1]<q[1] for q in queue):
